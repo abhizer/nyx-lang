@@ -1,0 +1,5 @@
+let 1x = 2.2; 
+
+fn main() -> int {
+    return 2; 
+}

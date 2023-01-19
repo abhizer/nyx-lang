@@ -1,0 +1,16 @@
+[package]
+name = "nyxc_parser"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nyxc_ast = { path = "../nyxc_ast/" }
+nyxc_lexer = { path = "../nyxc_lexer/" }
+anyhow = "1.0.68"
+rustyline = "10.0.0"
+
+[dev-dependencies]
+nyxc_ast = { path = "../nyxc_ast/", features = ["tests"] }
+

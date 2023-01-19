@@ -1,0 +1,20 @@
+[package]
+name = "nyx-lang"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    "nyxc_ast",
+    "nyxc_lexer",
+    "nyxc_parser",
+    "nyxc_typechecker",
+    "nyxc_evaluator",
+]
+
+[dependencies]
+nyxc_ast = { path = "./nyxc_ast/" }
+nyxc_parser = { path = "./nyxc_parser/" }
+nyxc_evaluator = { path = "./nyxc_evaluator/" }
+nyxc_typechecker = { path = "./nyxc_typechecker/" }
+anyhow = "1.0.68"
